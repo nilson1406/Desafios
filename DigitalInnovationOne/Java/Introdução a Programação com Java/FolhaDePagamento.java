@@ -1,3 +1,5 @@
+//Introdução a Programação com Java
+//3 / 3 - Folha de Pagamento
 //Desafio
 //Precisamos saber quanto uma determinada empresa deve pagar para seus colaboradores, porém temos
 // apenas a quantidade de horas trabalhadas e o valor hora. Escreva um programa que leia o número de um
@@ -28,23 +30,14 @@
 //|               15.55           |                               |
 //|---------------------------------------------------------------|
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class FolhaDePagamento {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int id = Integer.parseInt(st.nextToken());
-
-        st = new StringTokenizer(br.readLine());
-        int hoursWorked = Integer.parseInt(st.nextToken());
-
-        st = new StringTokenizer(br.readLine());
-        double valueHour = Double.parseDouble(st.nextToken());
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int id = scanner.nextInt();
+        int hoursWorked = scanner.nextInt();
+        double valueHour = scanner.nextDouble();
         double salary = hoursWorked * valueHour;
         System.out.println("NUMBER = " + id);
         System.out.printf("SALARY = U$ %.2f", salary);

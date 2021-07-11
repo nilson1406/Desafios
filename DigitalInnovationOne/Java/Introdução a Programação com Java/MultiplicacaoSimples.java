@@ -1,3 +1,5 @@
+//Introdução a Programação com Java
+//2 / 3 - Multiplicação Simples
 //Desafio
 //Você receberá dois valores inteiros. Faça a leitura e em seguida calcule o produto entre estes dois
 // valores. Atribua esta operação à variável PROD, mostrando esta de acordo com a mensagem de saída
@@ -23,20 +25,14 @@
 //|               9               |                               |
 //|---------------------------------------------------------------|
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class MultiplicacaoSimples {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int a = Integer.parseInt(st.nextToken());
-
-        st = new StringTokenizer(br.readLine());
-        int b = Integer.parseInt(st.nextToken());
-        int total = a * b;
-        System.out.println("PROD = " + total);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int prod = a * b;
+        System.out.println("PROD = " + prod);
     }
 }

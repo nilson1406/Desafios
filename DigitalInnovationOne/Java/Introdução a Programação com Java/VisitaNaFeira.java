@@ -1,3 +1,5 @@
+//Introdução a Programação com Java
+//1 / 3 - Visita na Feira
 //Desafio
 //Você está na feira com a sua sacola e parou em uma banca. O feirante lhe entregou pimentões
 // amarelos e vermelhos. Agora iremos somar os pimetões amarelos e vermelhos para descobrir o total de
@@ -23,18 +25,14 @@
 //|               11 -2           |           X = 9               |
 //|---------------------------------------------------------------|
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class VisitaNaFeira {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
-        int total = a + b;
-        System.out.println("X = " + total);
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int x = a + b;
+        System.out.println("X = " + x);
     }
 }
